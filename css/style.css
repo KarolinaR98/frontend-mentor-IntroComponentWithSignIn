@@ -35,12 +35,12 @@ body {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: space-between;
 }
 
 .text-container,
 .form-container {
-    width: 50%;
+    width: 45%;
 }
 
 .text-container {
@@ -54,10 +54,6 @@ body {
 
 .text-container p {
     font-size: 16px;
-}
-
-.form-container {
-    padding-left: 20px;
 }
 
 .form-container p.trial {
