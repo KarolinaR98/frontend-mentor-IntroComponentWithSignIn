@@ -1,0 +1,180 @@
+:root {
+
+    --red: hsl(0, 100%, 74%);
+    --green: hsl(154, 59%, 51%);
+    --blue: hsl(248, 32%, 49%);
+    --dark-blue: hsl(249, 10%, 26%);
+    --grayish-blue: hsl(246, 25%, 77%);
+    --white: hsl(180, 0%, 100%);
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.bold{
+    font-weight: 700;
+}
+
+.red {
+    color: var(--red);
+}
+
+body {
+    background: url(/images/bg-intro-desktop.png), var(--red);
+    background-size: cover;
+}
+
+.container {
+    max-width: 80%;
+    margin: auto;
+    margin-bottom: 20px;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.text-container,
+.form-container {
+    width: 50%;
+}
+
+.text-container {
+    color: var(--white);
+}
+
+.text-container h1 {
+    font-size: 40px;
+    line-height: 1.1;
+}
+
+.text-container p {
+    font-size: 16px;
+}
+
+.form-container {
+    padding-left: 10px;
+}
+
+.form-container p.trial {
+    width: 100%;
+    color: var(--white);
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    background-color: var(--blue);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 5px 1px rgba(62, 60, 73, 30%);
+}
+
+.form-container form {
+    width: 100%;
+    background-color: var(--white);
+    padding: 35px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 1px rgba(62, 60, 73, 30%);
+}
+
+.form-container form input {
+    width: 100%;
+    border: 2px solid #eae8e8;
+    border-radius: 5px;
+    padding: 12px;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.form-container form input.error{
+    background: url(/images/icon-error.svg) no-repeat;
+    background-size: 25px;
+    background-position:  98%;
+    border: 2px solid var(--red);
+    color: var(--red);
+}
+
+.form-container form button {
+    width: 100%;
+    background-color: var(--green);
+    color: var(--white);
+    font-weight: 700;
+    font-size: 16px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    padding: 12px;
+    cursor: pointer;
+}
+
+.form-container form p {
+    text-align: center;
+    color: var(--grayish-blue);
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.form-container form p.err-msg{
+    color: var(--red);
+    margin-top: 0;
+    text-align: right;
+}
+
+@media (max-width: 960px) {
+
+    .container{
+        width: 70%;
+    }
+
+    .text-container,
+    .form-container {
+        width: 100%;
+    }
+
+    .text-container{
+        margin-top: 50px;
+        text-align: center;
+    }
+}
+
+
+@media (max-width: 375px){
+
+    body {
+        background: url(/images/bg-intro-mobile.png), var(--red);
+        background-size: cover;
+    }
+
+    .container{
+        width: 95%;
+    }
+
+    .text-container h1{
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+
+    .text-container p{
+        font-size: 14px;
+    }
+
+    .form-container p.trial{
+        font-size: 14px;
+    }
+
+    .form-container form input{
+        font-size: 14px;
+    }
+
+    .form-container form button{
+        font-size: 14px;
+    }
+
+    .form-container form p{
+        font-size: 10px;
+    }
+
+}
