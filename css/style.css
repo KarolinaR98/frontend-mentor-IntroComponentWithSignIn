@@ -48,7 +48,7 @@ body {
 }
 
 .text-container h1 {
-    font-size: 40px;
+    font-size: 50px;
     line-height: 1.1;
 }
 
@@ -57,7 +57,7 @@ body {
 }
 
 .form-container {
-    padding-left: 10px;
+    padding-left: 20px;
 }
 
 .form-container p.trial {
