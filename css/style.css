@@ -23,7 +23,7 @@
 }
 
 body {
-    background: url(/images/bg-intro-desktop.png), var(--red);
+    background: url('../images/bg-intro-desktop.png'), var(--red);
     background-size: cover;
 }
 
@@ -91,7 +91,7 @@ body {
 }
 
 .form-container form input.error{
-    background: url(/images/icon-error.svg) no-repeat;
+    background: url('../images/icon-error.svg') no-repeat;
     background-size: 25px;
     background-position:  98%;
     border: 2px solid var(--red);
@@ -144,7 +144,7 @@ body {
 @media (max-width: 375px){
 
     body {
-        background: url(/images/bg-intro-mobile.png), var(--red);
+        background: url('../images/bg-intro-mobile.png'), var(--red);
         background-size: cover;
     }
 
